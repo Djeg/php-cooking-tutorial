@@ -23,6 +23,7 @@ session.
 -   [Les Variables en php](./cours/les-variables.php)
 -   [Les conditions](./cours/les-conditions.php)
 -   [Les tableaux](./cours/les-tableaux.php)
+-   [Les boucles](./cours/les-boucles.php)
 
 ## Les exercices
 
