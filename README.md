@@ -20,6 +20,8 @@ session.
 
 -   [Les bases](./cours/les-bases.php)
 -   [Configurer php](./cours/php-configuration.php)
+-   [Les Variables en php](./cours/les-variables.php)
+-   [Les conditions](./cours/les-conditions.php)
 
 ## Les exercices
 
