@@ -22,6 +22,7 @@ session.
 -   [Configurer php](./cours/php-configuration.php)
 -   [Les Variables en php](./cours/les-variables.php)
 -   [Les conditions](./cours/les-conditions.php)
+-   [Les tableaux](./cours/les-tableaux.php)
 
 ## Les exercices
 
