@@ -18,6 +18,9 @@ session.
 
 ## Les cours
 
+-   [Les bases](./cours/les-bases.php)
+-   [Configurer php](./cours/php-configuration.php)
+
 ## Les exercices
 
 ## Aller plus loin
@@ -25,6 +28,6 @@ session.
 Voici une liste de lien qui peut être très utile afin de commencer
 à apprendre PHP :)
 
-- [Un cour complet sur PHP](https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql)
-- [MAMP](https://www.mamp.info/en/windows/)
-- [PHP Sandbox](https://phpsandbox.io/)
+-   [Un cour complet sur PHP](https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql)
+-   [MAMP](https://www.mamp.info/en/windows/)
+-   [PHP Sandbox](https://phpsandbox.io/)
