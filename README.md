@@ -28,6 +28,10 @@ session.
 
 ## Les exercices
 
+-   [Exo 1](./exercices/exercice1.php)
+-   [Exo 2](./exercices/exercice2.php)
+-   [Exo 3](./exercices/exercice3.php)
+
 ## Aller plus loin
 
 Voici une liste de lien qui peut être très utile afin de commencer
