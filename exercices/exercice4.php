@@ -45,3 +45,48 @@ BONUS :
 Indice, vous pouvez créer et attacher une feuille de style css
 de la même manière que en HTML :)
 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./exercice4.css" />
+    <title>Exercice 4</title>
+</head>
+
+<body>
+    <h1>Fiche de l'élève <?= $eleve['nom'] ?> <?= $eleve['prenom'] ?></h1>
+
+    <h2>Information sur <?= $eleve['nom'] ?> <?= $eleve['prenom'] ?></h2>
+
+    <dl>
+        <dt>Age</dt>
+        <dd><?= $eleve['age'] ?></dd>
+        <dt>Classe</dt>
+        <dd><?= $eleve['classe'] ?></dd>
+    </dl>
+
+    <h3>Professeur Principal</h3>
+
+    <dl>
+        <dt>Nom</dt>
+        <dd><?= $eleve['profPrincipal']['nom'] ?></dd>
+        <dt>Prénom</dt>
+        <dd><?= $eleve['profPrincipal']['prenom'] ?></dd>
+        <dt>Matière</dt>
+        <dd><?= $eleve['profPrincipal']['matiere'] ?></dd>
+    </dl>
+
+    <h2>Notes</h2>
+
+    <ul>
+        <? foreach ($eleve['notes'] as $index => $note) : ?>
+            <li class="<? if ($note > 15) : ?>green<? elseif ($note >= 10) : ?>orange<? else : ?>red<? endif ?>">Note n°<?= $index + 1 ?> : <?= $note ?></li>
+        <? endforeach ?>
+    </ul>
+</body>
+
+</html>
