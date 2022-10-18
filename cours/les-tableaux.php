@@ -120,3 +120,9 @@ Il est possible de tester si un élément est présent dans un tableaux
 */
 in_array(20, $notes); // Ici retourne : faux (false)
 in_array(12, $notes); // Ici retourne : vrai (true)
+
+/*
+Il est possible de compter le nombre d'éléments d'un tableaux
+graçe à la fonction count
+*/
+count($notes); // Ici retourne : 6
