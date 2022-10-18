@@ -26,6 +26,7 @@ session.
 -   [Les boucles](./cours/les-boucles.php)
 -   [Écrire des fichiers PHP](./cours/php-file.php)
 -   [Les fonctions](./cours/les-fonctions.php)
+-   [Les inclusions](./cours/les-inclusions.php)
 
 ## Les exercices
 
