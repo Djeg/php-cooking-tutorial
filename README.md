@@ -27,6 +27,7 @@ session.
 -   [Écrire des fichiers PHP](./cours/php-file.php)
 -   [Les fonctions](./cours/les-fonctions.php)
 -   [Les inclusions](./cours/les-inclusions.php)
+-   [Les URL](./cours/les-urls.php)
 
 ## Les exercices
 
@@ -35,6 +36,7 @@ session.
 -   [Exo 3](./exercices/exercice3.php)
 -   [Exo 4](./exercices/exercice4.php)
 -   [Exo 5](./exercices/exercice5.php)
+-   [Exo 6](./exercices/exercice6.php)
 
 ## Aller plus loin
 

@@ -3,6 +3,7 @@
 $pageTitle = 'Contact';
 include('./includes/pageStart.php');
 include('./includes/header.php');
+
 ?>
 
 <main class="content">
@@ -10,7 +11,7 @@ include('./includes/header.php');
     <form>
         <div>
             <label for="email">Email :</label>
-            <input type="email" id="email" name="email" />
+            <input type="email" id="email" name="email" value="<?= $_GET['email'] ?>" />
         </div>
 
         <div>

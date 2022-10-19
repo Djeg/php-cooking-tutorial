@@ -133,6 +133,8 @@ On design les cartes de recette
     box-shadow: 0px 0px 5px rgba(0, 0, 0, .4);
     position: relative;
     padding: 1rem;
+    text-decoration: none;
+    outline: none;
 }
 
 .recette .background {

@@ -18,7 +18,7 @@ include('./includes/pageStart.php');
     <? /* On boucle sur les recettes */ ?>
     <? foreach ($recettes as $recette) : ?>
         <? /* Pour chaque recette nous affichons une petite carte */ ?>
-        <div class="recette">
+        <a class="recette" href="./recette.php?id=<?= $recette['id'] ?>">
             <div class="background">
                 <div class="layer"></div>
                 <img src="<?= $recette['image'] ?>" alt="<?= $recette['intitulé'] ?>" />
@@ -33,7 +33,7 @@ include('./includes/pageStart.php');
                     <?= $recette['auteur']['prenom'] ?> <?= $recette['auteur']['nom'] ?>
                 </div>
             </div>
-        </div>
+        </a>
     <? endforeach ?>
 </main>
 
