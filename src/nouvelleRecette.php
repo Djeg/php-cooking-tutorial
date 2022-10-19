@@ -7,7 +7,7 @@ include('./includes/header.php');
 
 <main class="content">
     <h1 class="display">Nouvelle Recette</h1>
-    <form>
+    <form method="GET">
         <div>
             <label for="title">Intitulé :</label>
             <input type="text" id="title" name="title" />

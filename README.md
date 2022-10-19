@@ -28,6 +28,7 @@ session.
 -   [Les fonctions](./cours/les-fonctions.php)
 -   [Les inclusions](./cours/les-inclusions.php)
 -   [Les URL](./cours/les-urls.php)
+-   [Les formulaires](./cours/les-formulaires.php)
 
 ## Les exercices
 
@@ -37,6 +38,7 @@ session.
 -   [Exo 4](./exercices/exercice4.php)
 -   [Exo 5](./exercices/exercice5.php)
 -   [Exo 6](./exercices/exercice6.php)
+-   [Exo 7](./exercices/exercice7.php)
 
 ## Aller plus loin
 
