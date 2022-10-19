@@ -39,6 +39,9 @@ header.navbar {
     justify-content: space-between;
     padding: 1rem 3rem;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 3;
 }
 
 header.navbar .logo {
