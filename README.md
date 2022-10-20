@@ -30,6 +30,7 @@ session.
 -   [Les URL](./cours/les-urls.php)
 -   [Les formulaires](./cours/les-formulaires.php)
 -   [Les sessions](./cours/les-sessions.php)
+-   [Les cookies](./cours/les-cookies.php)
 
 ## Les exercices
 
