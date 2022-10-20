@@ -1,4 +1,5 @@
 <?
+session_start();
 
 $pageTitle = 'Connexion Erreur';
 include('./includes/pageStart.php');

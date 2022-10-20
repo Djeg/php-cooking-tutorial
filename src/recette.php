@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 // On inclue les recettes
 include('./includes/recettes.php');
 

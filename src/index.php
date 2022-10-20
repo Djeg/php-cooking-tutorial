@@ -1,4 +1,5 @@
 <?
+session_start();
 /*
 Page d'accueil de mon site de recette de cuisine
 */

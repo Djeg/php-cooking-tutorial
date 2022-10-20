@@ -1,4 +1,5 @@
 <?
+session_start();
 
 // On inclue les utilisateurs
 include('./includes/users.php');

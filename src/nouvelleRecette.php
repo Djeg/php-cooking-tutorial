@@ -1,4 +1,5 @@
 <?
+session_start();
 
 $pageTitle = 'Nouvelle Recette';
 include('./includes/pageStart.php');

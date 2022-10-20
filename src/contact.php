@@ -1,4 +1,5 @@
 <?
+session_start();
 
 $pageTitle = 'Contact';
 include('./includes/pageStart.php');
