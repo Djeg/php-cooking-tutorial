@@ -9,5 +9,6 @@
         <a href="./populaires.php">Les Plus Populaire</a>
         <a href="./contact.php">Contact</a>
         <a href="./nouvelleRecette.php">Nouvelle Recette</a>
+        <a href="./connexion.php">Se Connécter</a>
     </nav>
 </header>
