@@ -38,7 +38,7 @@ Pour créer un cookie en php, rien de plus simple :
 setcookie('userEmail', 'john@mail.com', [
     'httpOnly' => true,
     'secure' => true,
-    'expires' => time() * 90 * 24 * 3600,
+    'expires' => time() + 90 * 24 * 3600,
 ]);
 /*
 !!! TRES TRES TRES IMPORTANT !!!
