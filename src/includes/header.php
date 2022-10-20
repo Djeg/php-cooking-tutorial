@@ -10,8 +10,8 @@
         <a href="./contact.php">Contact</a>
         <a href="./nouvelleRecette.php">Nouvelle Recette</a>
 
-        <? if (isset($_SESSION['user_email'])) : ?>
-            <p><?= $_SESSION['user_prenom'] ?> <?= $_SESSION['user_nom'] ?></p>
+        <? if (isset($_COOKIE['user_email'])) : ?>
+            <p><?= $_COOKIE['user_prenom'] ?> <?= $_COOKIE['user_nom'] ?></p>
             <a href="./deconnexion.php">Se déconnécter</a>
         <? else : ?>
             <a href="./connexion.php">Se Connécter</a>

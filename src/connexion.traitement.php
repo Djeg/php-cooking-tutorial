@@ -1,5 +1,4 @@
 <?
-session_start();
 
 // On inclue les utilisateurs
 include('./includes/users.php');
@@ -60,9 +59,21 @@ if (!$user) {
 
 // Enregistrement des informations de l'utilisateur
 // dans la session
-$_SESSION['user_email'] = $user['email'];
-$_SESSION['user_nom'] = $user['nom'];
-$_SESSION['user_prenom'] = $user['prenom'];
+setcookie('user_email', $user['email'], [
+    'secure' => true,
+    'httpOnly' => true,
+    'expires' => time() + 180 * 24 * 3600,
+]);
+setcookie('user_nom', $user['nom'], [
+    'secure' => true,
+    'httpOnly' => true,
+    'expires' => time() + 180 * 24 * 3600,
+]);
+setcookie('user_prenom', $user['prenom'], [
+    'secure' => true,
+    'httpOnly' => true,
+    'expires' => time() + 180 * 24 * 3600,
+]);
 
 
 // On affiche la page de bienvenue :

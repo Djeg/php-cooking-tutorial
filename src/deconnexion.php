@@ -1,17 +1,28 @@
 <?php
 
-// On démarre la session
-session_start();
-
 // On récupére le nom et le prenom de l'utilisateur
 $nom = $_SESSION['user_nom'];
 $prenom = $_SESSION['user_prenom'];
 
-// Je détruis la session
-session_destroy();
-
-// Je détruis l'email
-unset($_SESSION['user_email']);
+// Je supprime les cookie
+setcookie('user_email', $user['email'], [
+    'secure' => true,
+    'httpOnly' => true,
+    'expires' => 1,
+]);
+setcookie('user_nom', $user['nom'], [
+    'secure' => true,
+    'httpOnly' => true,
+    'expires' => 1,
+]);
+setcookie('user_prenom', $user['prenom'], [
+    'secure' => true,
+    'httpOnly' => true,
+    'expires' => 1,
+]);
+unset($_COOKIE['user_email']);
+unset($_COOKIE['user_nom']);
+unset($_COOKIE['user_prenom']);
 
 // Affichage de la page de deconnexion :
 

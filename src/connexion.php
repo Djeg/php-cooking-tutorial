@@ -1,5 +1,4 @@
 <?
-session_start();
 
 $pageTitle = 'Connexion';
 include('./includes/pageStart.php');
