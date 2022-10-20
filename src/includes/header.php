@@ -9,6 +9,13 @@
         <a href="./populaires.php">Les Plus Populaire</a>
         <a href="./contact.php">Contact</a>
         <a href="./nouvelleRecette.php">Nouvelle Recette</a>
-        <a href="./connexion.php">Se Connécter</a>
+
+        <? if (isset($_SESSION['user_email'])) : ?>
+            <p><?= $_SESSION['user_prenom'] ?> <?= $_SESSION['user_nom'] ?></p>
+            <a href="./deconnexion.php">Se déconnécter</a>
+        <? else : ?>
+            <a href="./connexion.php">Se Connécter</a>
+        <? endif ?>
+
     </nav>
 </header>

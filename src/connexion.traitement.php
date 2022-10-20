@@ -58,6 +58,13 @@ if (!$user) {
     die();
 }
 
+// Enregistrement des informations de l'utilisateur
+// dans la session
+$_SESSION['user_email'] = $user['email'];
+$_SESSION['user_nom'] = $user['nom'];
+$_SESSION['user_prenom'] = $user['prenom'];
+
+
 // On affiche la page de bienvenue :
 
 $pageTitle = 'Bienvenue :)';
