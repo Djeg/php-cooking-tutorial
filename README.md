@@ -31,7 +31,7 @@ session.
 -   [Les formulaires](./cours/les-formulaires.php)
 -   [Les sessions](./cours/les-sessions.php)
 -   [Les cookies](./cours/les-cookies.php)
--   [Les bases de données](./cours/les-base-de-donnees.php)
+-   [Les bases de données](./cours/les-bases-de-donnees.php)
 
 ## Les exercices
 
