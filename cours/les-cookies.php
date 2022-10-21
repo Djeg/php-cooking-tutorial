@@ -40,6 +40,7 @@ setcookie('userEmail', 'john@mail.com', [
     'secure' => true,
     'expires' => time() + 90 * 24 * 3600,
 ]);
+$_COOKIE['userEmail'] = 'john@mail.com';
 /*
 !!! TRES TRES TRES IMPORTANT !!!
 

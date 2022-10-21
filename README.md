@@ -31,6 +31,7 @@ session.
 -   [Les formulaires](./cours/les-formulaires.php)
 -   [Les sessions](./cours/les-sessions.php)
 -   [Les cookies](./cours/les-cookies.php)
+-   [Les bases de données](./cours/les-base-de-donnees.php)
 
 ## Les exercices
 
@@ -43,6 +44,7 @@ session.
 -   [Exo 7](./exercices/exercice7.php)
 -   [Exo 8](./exercices/exercice8.php)
 -   [Exo 9](./exercices/exercice9.php)
+-   [Exo 10](./exercices/exercice10.php)
 
 ## Aller plus loin
 
