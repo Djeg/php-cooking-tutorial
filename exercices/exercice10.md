@@ -2,7 +2,7 @@
 
 ## 1. Téléchargez et installer la base de données
 
-1. Tout d'abord télécharger le fichier [cookme](../cookme.sql)
+1. Tout d'abord télécharger le fichier [cookme](../cookme.sql) (Ensuite clicker sur "Raw" >> Click droits : Enregistrer Sous)
 2. Insérer ce fichier dans votre base de données en utilisant
    phpmyadmin (Importer >> Choisir un fichier >> Executer).
 
