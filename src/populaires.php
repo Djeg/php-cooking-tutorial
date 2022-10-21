@@ -11,6 +11,7 @@ include('./includes/header.php');
 
 // On récupére un tableaux avec tout les likes
 // exemple : [56, 12, 9, 67 ...]
+$recettes = fetchAllRecipes();
 $likes = array_column($recettes, 'likes');
 
 // On demande à trier de manière decroisante
@@ -27,16 +28,16 @@ array_multisort($likes, SORT_DESC, $recettes);
         <div class="recette">
             <div class="background">
                 <div class="layer"></div>
-                <img src="<?= $recette['image'] ?>" alt="<?= $recette['intitulé'] ?>" />
+                <img src="<?= $recette['image'] ?>" alt="<?= $recette['title'] ?>" />
             </div>
-            <h3 class="title"><?= $recette['intitulé'] ?></h3>
+            <h3 class="title"><?= $recette['title'] ?></h3>
             <p class="description"><?= $recette['description'] ?></p>
             <div class="like"><?= $recette['likes'] ?></div>
-            <div class="difficulty"><?= $recette['difficulte'] ?></div>
+            <div class="difficulty"><?= $recette['difficulty'] ?></div>
             <div class="footer">
-                <div class="price"><?= $recette['prix'] ?></div>
+                <div class="price"><?= $recette['price'] ?></div>
                 <div class="author">
-                    <?= $recette['auteur']['prenom'] ?> <?= $recette['auteur']['nom'] ?>
+                    <?= $recette['author'] ?>
                 </div>
             </div>
         </div>

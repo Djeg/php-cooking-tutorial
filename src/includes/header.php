@@ -15,6 +15,7 @@
             <a href="./deconnexion.php">Se déconnécter</a>
         <? else : ?>
             <a href="./connexion.php">Se Connécter</a>
+            <a href="./inscription.php">S'inscrire</a>
         <? endif ?>
 
     </nav>

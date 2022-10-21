@@ -16,21 +16,21 @@ include('./includes/pageStart.php');
 <!-- Contient le contenu de la page -->
 <main class="content">
     <? /* On boucle sur les recettes */ ?>
-    <? foreach ($recettes as $recette) : ?>
+    <? foreach (fetchAllRecipes() as $recette) : ?>
         <? /* Pour chaque recette nous affichons une petite carte */ ?>
         <a class="recette" href="./recette.php?id=<?= $recette['id'] ?>">
             <div class="background">
                 <div class="layer"></div>
-                <img src="<?= $recette['image'] ?>" alt="<?= $recette['intitulé'] ?>" />
+                <img src="<?= $recette['image'] ?>" alt="<?= $recette['title'] ?>" />
             </div>
-            <h3 class="title"><?= $recette['intitulé'] ?></h3>
+            <h3 class="title"><?= $recette['title'] ?></h3>
             <p class="description"><?= $recette['description'] ?></p>
             <div class="like"><?= $recette['likes'] ?></div>
-            <div class="difficulty"><?= $recette['difficulte'] ?></div>
+            <div class="difficulty"><?= $recette['difficulty'] ?></div>
             <div class="footer">
-                <div class="price"><?= $recette['prix'] ?></div>
+                <div class="price"><?= $recette['price'] ?></div>
                 <div class="author">
-                    <?= $recette['auteur']['prenom'] ?> <?= $recette['auteur']['nom'] ?>
+                    <?= $recette['author'] ?>
                 </div>
             </div>
         </a>

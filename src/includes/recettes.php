@@ -154,3 +154,55 @@ $recettes = [
         ]
     ],
 ];
+
+// On créé une fonction fetchAllRecipes qui récupére
+// toutes les recettes de la base de données
+function fetchAllRecipes(int $limit = 25)
+{
+    // Connexion à la base de données
+    $connection = new PDO(
+        'mysql:host=db;dbname=cookme;charset=utf8',
+        'root',
+        'root',
+    );
+
+    // Préparation de la requête SQL
+    $request = $connection->prepare('SELECT * FROM recipes LIMIT :limit');
+    $request->bindParam('limit', $limit, PDO::PARAM_INT);
+
+
+    $request->execute();
+
+    // On transforme le resultat en tableaux php
+    $recipes = $request->fetchAll();
+
+    // On retourne les users pour pouvoir les utiliser
+    // à l'éxtérieur de la fonction
+    return $recipes;
+}
+
+// On récupére 1 seul recette par son identifiant
+function fetchOneRecipe($id)
+{
+    // Connexion à la base de données
+    $connection = new PDO(
+        'mysql:host=db;dbname=cookme;charset=utf8',
+        'root',
+        'root',
+    );
+
+    // Préparation de la requête SQL
+    $request = $connection->prepare('SELECT * FROM recipes WHERE id = :id');
+
+    $request->bindParam('id', $id, PDO::PARAM_INT);
+
+    // Lancement de la requête
+    $request->execute();
+
+    // On transforme le resultat en tableaux php
+    $recipe = $request->fetch();
+
+    // On retourne les users pour pouvoir les utiliser
+    // à l'éxtérieur de la fonction
+    return $recipe;
+}

@@ -1,21 +1,21 @@
 <?php
 
 // On récupére le nom et le prenom de l'utilisateur
-$nom = $_SESSION['user_nom'];
-$prenom = $_SESSION['user_prenom'];
+$nom = $_COOKIE['user_nom'];
+$prenom = $_COOKIE['user_prenom'];
 
 // Je supprime les cookie
-setcookie('user_email', $user['email'], [
+setcookie('user_email', '', [
     'secure' => true,
     'httpOnly' => true,
     'expires' => 1,
 ]);
-setcookie('user_nom', $user['nom'], [
+setcookie('user_nom', '', [
     'secure' => true,
     'httpOnly' => true,
     'expires' => 1,
 ]);
-setcookie('user_prenom', $user['prenom'], [
+setcookie('user_prenom', '', [
     'secure' => true,
     'httpOnly' => true,
     'expires' => 1,

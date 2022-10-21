@@ -37,6 +37,9 @@ if ($email === false || !$password) {
 // le possible utilisateur
 $user = null;
 
+// Je récupére tout les utilisateurs depuis la base de données
+$utilisateurs = fetchAllUsers();
+
 // Je vais boucler sur tout mes utilisateurs
 foreach ($utilisateurs as $utilisateur) {
     // On test si l'email et le mot de passe correspondent
@@ -64,12 +67,12 @@ setcookie('user_email', $user['email'], [
     'httpOnly' => true,
     'expires' => time() + 180 * 24 * 3600,
 ]);
-setcookie('user_nom', $user['nom'], [
+setcookie('user_nom', $user['lastname'], [
     'secure' => true,
     'httpOnly' => true,
     'expires' => time() + 180 * 24 * 3600,
 ]);
-setcookie('user_prenom', $user['prenom'], [
+setcookie('user_prenom', $user['firstname'], [
     'secure' => true,
     'httpOnly' => true,
     'expires' => time() + 180 * 24 * 3600,
@@ -87,7 +90,7 @@ include('./includes/header.php');
 <main class="content">
     <h1 class="display">Bienvenue !</h1>
     <p>
-        Content de vous revoir <?= $user['prenom'] ?> <?= $user['nom'] ?>
+        Content de vous revoir <?= $user['firstname'] ?> <?= $user['lastname'] ?>
     </p>
 </main>
 
