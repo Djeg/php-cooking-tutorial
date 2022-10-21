@@ -44,7 +44,7 @@ session.
 -   [Exo 7](./exercices/exercice7.php)
 -   [Exo 8](./exercices/exercice8.php)
 -   [Exo 9](./exercices/exercice9.php)
--   [Exo 10](./exercices/exercice10.php)
+-   [Exo 10](./exercices/exercice10.md)
 
 ## Aller plus loin
 
